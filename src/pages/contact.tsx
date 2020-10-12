@@ -27,8 +27,7 @@ const Contact: React.FC<Props> = ({ siteKey }) => {
 export default Contact;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const siteKey = await getSiteKey();
-
+  const siteKey = process.env.RECAPTCHA_SITE_KEY;
   return {
     props: {
       siteKey: siteKey,
