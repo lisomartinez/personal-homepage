@@ -7,9 +7,10 @@ export const Container = styled.article`
 
 export const Keyword = styled.ul`
   background-color: #dfeaf1;
-  color: #3e6d8e;
-  padding: 0.3rem;
+  color: #255088;
+  padding: 0.4rem;
   margin: 0.5rem 0.5rem 0.5rem 0;
+  box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 255, 0.2);
 `;
 
 export const KeywordList = styled.ul`
@@ -19,6 +20,8 @@ export const KeywordList = styled.ul`
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  flex-wrap: wrap;
+  width: 15rem;
 `;
 
 export type BarWidth = {

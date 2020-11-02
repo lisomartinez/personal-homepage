@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Summary: React.FC<Props> = ({ summary }) => {
-  return <Container>{summary}</Container>;
+  return <Container data-testid="summary-text">{summary}</Container>;
 };
 
 export default Summary;

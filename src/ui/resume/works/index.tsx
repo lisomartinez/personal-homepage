@@ -16,7 +16,15 @@ const makeHeader = (expanded: boolean) => (
 
 export const List = styled.div`
   margin-top: ${(props) => props.theme.resume.section.marginTop};
+  margin-right: 15rem;
 
+  @media only screen and (max-width: 1450px) {
+    margin-right: 5rem;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    margin-right: 0rem;
+  }
   //display: flex;
   //flex-direction: row;
   //flex-wrap: wrap;

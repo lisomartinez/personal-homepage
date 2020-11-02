@@ -19,7 +19,10 @@ export const Header = styled.div`
   align-content: flex-start;
 `;
 
-export const Company = styled.div``;
+export const Company = styled.div`
+  font-style: normal;
+  font-weight: normal;
+`;
 
 export const PositionHeader = styled.div`
   display: flex;
@@ -27,6 +30,8 @@ export const PositionHeader = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
 `;
 
 export const Icon = styled.div`
@@ -38,4 +43,11 @@ export const Separator = styled.span`
   margin-right: 0.5rem;
 `;
 
-export const PeriodHeader = styled.div``;
+export const PeriodHeader = styled.div`
+  flex-grow: 3;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+`;

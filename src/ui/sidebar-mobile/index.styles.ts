@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 export const Container = styled.div`
   display: none;
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     display: flex;
     width: 100vw;
     height: 100vh;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
 `;

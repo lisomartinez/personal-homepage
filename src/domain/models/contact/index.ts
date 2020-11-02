@@ -11,3 +11,8 @@ export interface ContactRequest {
   data: ContactMessage;
   token: CaptchaRequest;
 }
+
+export interface ContactResponse {
+  status: string;
+  body?: string;
+}

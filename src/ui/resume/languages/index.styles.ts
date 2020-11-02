@@ -7,4 +7,5 @@ export const List = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+  margin-bottom: 2rem;
 `;

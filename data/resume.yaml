@@ -8,13 +8,9 @@ basics:
   phone: '11-5487-0746'
   age: 36
   website: https://lisandro.martinezaledda.com
-  summary: Richard hails from Tulsa. He has earned degrees from the University of
-    Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper,
-    he worked for Hooli as a part time software developer. While his work focuses
-    on applied information theory, mostly optimizing lossless compression schema of
-    both the length-limited and adaptive variants, his non-work interests range widely,
-    everything from quantum computing to chaos theory. He could tell you about it,
-    but THAT would NOT be a “length-limited” conversation!
+  summary: Me considero una persona orientada a metas, responsable y comprometida cuyo objetivo en la actualidad es insertarse laboralmente en
+    la industria del software. Poseo conocimientos del ecosistema Java y, en menor medida, de la parte de frontend. En la actualidad me
+    encuentro cursando una carrera de posgrado sobre ingeniería de software.
   location:
     address: 'Valentín Gómez 3352 2do 11'
     postalCode: '1191'
@@ -23,50 +19,63 @@ basics:
     region: Almagro
   profiles:
     - network: LinkedIn
-      username: neutralthoughts
-      url: https://soundcloud.example.com/dandymusicnl
+      username: lisandro-martinez
+      url: https://www.linkedin.com/in/lisandro-martinez/
     - network: GitHub
       username: lisomartinez
       url: https://github.com/lisomartinez
 work:
-  - company: Pied Piper
-    location: Palo Alto, CA
+  - company: Freelance
+    location: Buenos Aires, Argentina
     description: Awesome compression company
-    position: CEO/President
-    url: http://piedpiper.example.com
-    startDate: '2013-12-01'
-    endDate: '2014-12-01'
-    summary: Pied Piper is a multi-platform technology based on a proprietary universal
-      compression algorithm that has consistently fielded high Weisman Scores™ that
-      are not merely competitive, but approach the theoretical limit of lossless compression.
-    highlights:
-      - Build an algorithm for artist to detect if their music was violating copy right
-        infringement laws
-      - Successfully won Techcrunch Disrupt
-      - Optimized an algorithm that holds the current world record for Weisman Scores
-volunteer:
-  - organization: CoderDojo
-    position: Teacher
-    url: http://coderdojo.example.com/
-    startDate: '2012-01-01'
-    endDate: '2013-01-01'
-    summary: Global movement of free coding clubs for young people.
-    highlights:
-      - Awarded 'Teacher of the Month'
+    position: Asistencia Técnica
+    url: ''
+    startDate: '2015-6-01'
+    endDate: 'actualidad'
+    summary: ''
+    highlights: [ ]
+  - company: Instituto Nacional de Tecnología Industrial
+    location: Buenos Aires, Argentina
+    description: Awesome compression company
+    position: Administrador de redes y sistemas operativos
+    url: ''
+    startDate: '2015-5-01'
+    endDate: '2009-4-30'
+    summary: ''
+    highlights: [ ]
+  - company: Instituto Nacional de Tecnología Industrial
+    location: Buenos Aires, Argentina
+    description: Awesome compression company
+    position: Soporte técnico
+    url: ''
+    startDate: '2006-5-31'
+    endDate: '2015-6-01'
+    summary: ''
+    highlights: [ ]
+  - company: Atento Argentina - Speedy
+    location: Buenos Aires, Argentina
+    description: Awesome compression company
+    position: Asistente teléfonico
+    url: ''
+    startDate: '2005-5-01'
+    endDate: '2006-5-31'
+    summary: ''
+    highlights: [ ]
+volunteer: [ ]
 education:
-  - institution: Universidad de Buenos Aires
-    area: Ciencias Sociales
-    studyType: Licenciado en Sociología
-    startDate: '2005-05-01'
-    endDate: '2015-01-01'
-    status: Finalizado
-    gpa: '8.81'
-    comments: [ ]
   - institution: E.M.M Nro. 5 D.E 10
     area: Comercial
     studyType: Perito Mercantil
-    startDate: '1998-06-01'
+    startDate: '1998-6-01'
     endDate: '2002-12-01'
+    status: Finalizado
+    gpa: '8.81'
+    comments: [ ]
+  - institution: Universidad de Buenos Aires
+    area: Ciencias Sociales
+    studyType: Licenciado en Sociología
+    startDate: '2005-5-01'
+    endDate: '2015-1-01'
     status: Finalizado
     gpa: '8.81'
     comments: [ ]
@@ -95,16 +104,18 @@ skills:
       - HTML
       - CSS
       - Javascript
+      - Typescript
       - React
   - name: Control de Versiones
     level: Intermediate
     keywords:
-      - Mpeg
-      - MP4
-      - GIF
+      - Git
+      - GitFlow
+      - GitHub
   - name: SQL
     level: Intermediate
-    keywords: [ ]
+    keywords:
+      - Sql Server
   - name: Java
     level: Intermediate
     keywords:
@@ -112,11 +123,29 @@ skills:
       - Maven
       - Gradle
       - Hibernate
+  - name: Testing
+    level: Intermediate
+    keywords:
+      - JUnit
+      - Mockito
+      - Jest
+      - Hibernate
+  - name: TDD
+    level: Beginner
+    keywords: [ ]
+  - name: Contenedores
+    level: Beginner
+    keywords:
+      - Docker
+      - Docker compose
+  - name: Linux
+    level: Intermediate
+    keywords: [ ]
 languages:
   - language: Ingles
     fluency: Upper-intermediate
   - language: Aleman
-    fluency: Basico
+    fluency: Beginner
 interests: [ ]
 references: [ ]
 projects: [ ]

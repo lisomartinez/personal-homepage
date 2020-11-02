@@ -35,17 +35,20 @@ const theme = {
     progressBar: {
       titleFontSize: '1.4rem',
       color: {
-        beginner: 'yellow',
-        intermediate: 'green',
-        advanced: 'brown',
-        master: 'green',
+        beginner: '#EB5F51',
+        intermediate: '#ffdf1f',
+        advanced: '#5CB85C',
+        master: '#59C596',
       },
       level: {
         fontSize: '1.3rem',
         marginBottom: '0.4rem',
         fontStyle: 'italic',
       },
-      height: '0.8rem',
+      height: '1rem',
+    },
+    devices: {
+      mobile: '440px',
     },
   },
 };

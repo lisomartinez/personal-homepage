@@ -9,9 +9,11 @@ type Props = {
 const Location: React.FC<Props> = ({ location }) => {
   return (
     <Container data-testid="location">
-      <span>{location.city}</span>
-      <span> | </span>
       <span>{location.region}</span>
+      <span> - </span>
+      <span>{location.city}</span>
+      <span> - </span>
+      <span>{location.countryCode}</span>
     </Container>
   );
 };

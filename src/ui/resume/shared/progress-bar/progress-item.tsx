@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import ProgressBar from './progress-bar';
 import styled from 'styled-components';
+import Level from './level';
 
 type Props = {
   level: string;
@@ -42,7 +43,7 @@ const ProgressItem: React.FC<Props> = ({ name, level }) => {
   return (
     <React.Fragment>
       <Name ref={titleHeader}>{name}</Name>
-      <LevelStyle>{level}</LevelStyle>
+      <LevelStyle>{Level.translate(level)}</LevelStyle>
       <LevelBar width={'150px'}>
         <ProgressBar level={level} />
       </LevelBar>

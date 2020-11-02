@@ -1,17 +1,43 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import initMiddleware from '../../lib/init-middleware';
 import Cors from 'cors';
-import contactController from '../../controllers/contact.controller';
+import contactController from '../../controllers/contact';
+import createContactController from '../../domain/service/factories';
+import { HttpRequest, HttpResponse } from '../../domain/models/http';
 
 const cors = initMiddleware(
-  // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
   Cors({
-    // Only allow requests with GET, POST and OPTIONS
-    methods: ['POST'],
+    methods: ['POST', 'OPTIONS'],
   })
 );
 
+export default async (req: NextApiRequest, res: NextApiResponse) => {
+  await cors(req, res);
+  if (reqIsPost(req)) {
+    try {
+      const httpRequest: HttpRequest = fromNextApiRequest(req);
+      const httpResponse = await createContactController().handle(httpRequest);
+      sendResponse(httpResponse, res);
+    } catch (errorHttpResponse) {
+      sendResponse(errorHttpResponse, res);
+    }
+  } else {
+    sendMethodNotAllowedResponse(res, req);
+  }
+};
+
 const reqIsPost = (req: NextApiRequest) => req.method === 'POST';
+
+const fromNextApiRequest = (req: NextApiRequest) => ({
+  body: req.body,
+  method: req.method,
+});
+
+function sendResponse(httpResponse: HttpResponse, res: NextApiResponse) {
+  res.statusCode = httpResponse.statusCode;
+  res.json(httpResponse.json);
+  res.end();
+}
 
 const sendMethodNotAllowedResponse = (
   res: NextApiResponse,
@@ -19,12 +45,5 @@ const sendMethodNotAllowedResponse = (
 ) => {
   res.statusCode = 405;
   res.json({ reason: `${req.method} not allowed` });
-};
-
-export default async (req: NextApiRequest, res: NextApiResponse) => {
-  if (reqIsPost(req)) {
-    await contactController.handle(req, res);
-  } else {
-    sendMethodNotAllowedResponse(res, req);
-  }
+  res.end();
 };

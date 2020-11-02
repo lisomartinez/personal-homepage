@@ -6,8 +6,6 @@ export const Form = styled.form`
   justify-content: center;
   align-items: center;
   align-content: center;
-  //height: 100%;
-  //width: 100%;
 `;
 
 export const Label = styled.label`
@@ -24,7 +22,7 @@ type TextProps = {
 export const Input = styled.input<TextProps>`
   height: 3rem;
   border-radius: 25px;
-  border: 2px solid darkslateblue;
+  border: 1px solid black;
 `;
 
 export const TextInput = styled(Input)`
@@ -76,30 +74,47 @@ export const FormField = styled.div`
 
 export const Container = styled.div`
   height: 100%;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #faf3f7;
+  margin-left: 4rem;
+  @media only screen and (max-width: 1200px) {
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 1650px) {
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    margin-top: 10px;
+  }
 `;
 
 export const ContactOptions = styled.section`
   display: flex;
   height: 100%;
   flex-direction: column;
-  background-color: gainsboro;
 
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1200px) {
+    margin-top: 20px;
+
     padding-left: 5rem;
     padding-right: 5rem;
   }
 
-  @media only screen and (max-width: 1700px) {
+  @media only screen and (max-width: 1650px) {
+    margin-top: 20px;
+
     padding-left: 6rem;
     padding-right: 6rem;
   }
 
   @media only screen and (max-width: 1100px) {
+    margin-top: 20px;
     padding-left: 3rem;
     padding-right: 3rem;
   }
@@ -122,7 +137,6 @@ export const Social = styled.article`
   margin-top: 2rem;
   width: 100%;
   height: 10rem;
-  //background-color: gray;
   display: flex;
   flex-direction: row;
   justify-content: center;

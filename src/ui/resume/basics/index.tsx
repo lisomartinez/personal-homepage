@@ -8,16 +8,20 @@ import { Container, Label, Name } from './basics.styles';
 
 type Props = {
   basics: BasicsModel;
+  profile: string;
 };
 
-const Basics: React.FC<Props> = ({ basics }) => {
+const Basics: React.FC<Props> = ({ basics, profile }) => {
   return (
     <Container>
       <Name>{basics.name}</Name>
       <Label>{basics.label}</Label>
-      <div>{basics.nationality}</div>
       <Location location={basics.location} />
-      <Contact email={basics.email} website={basics.website} />
+      <Contact
+        email={basics.email}
+        website={basics.website}
+        profile={profile}
+      />
       <ProfileList profiles={basics.profiles} />
       <Summary summary={basics.summary} />
     </Container>

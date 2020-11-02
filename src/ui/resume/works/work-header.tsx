@@ -27,17 +27,17 @@ const WorkHeader: React.FC<Props> = (props: Props) => {
         <Icon>
           <ToggleIcon expanded={expanded} />
         </Icon>
-        <Position>{props.experience.position}</Position>
-        <Company>
-          <Separator>|</Separator>
-          {props.experience.company}
-        </Company>
+        <Position>
+          {props.experience.position}
+          <Company>{props.experience.company}</Company>
+        </Position>
       </PositionHeader>
 
       <PeriodHeader>
         <StartDate>
-          {Calendar.convertDate(props.experience.startDate)} -{' '}
+          {Calendar.convertDate(props.experience.startDate)}
         </StartDate>
+        <span>{'  /  '}</span>
         <EndDate>{Calendar.convertDate(props.experience.endDate)}</EndDate>
       </PeriodHeader>
     </Header>

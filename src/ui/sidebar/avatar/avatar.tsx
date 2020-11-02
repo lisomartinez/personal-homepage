@@ -1,10 +1,10 @@
 import React from 'react';
-import { ImageContainer, Image } from './avatar.styles';
+import { Image, ImageContainer } from './avatar.styles';
 
 const Avatar: React.FC = () => {
   return (
     <ImageContainer>
-      <Image />
+      <Image src="images/photo.jpg" alt="my photo" />
     </ImageContainer>
   );
 };

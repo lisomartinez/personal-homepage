@@ -10,8 +10,7 @@ type Props = {
 
 const Link: React.FC<Props> = (props: Props) => {
   const router = useRouter();
-  // console.log('path', router.pathname);
-  // console.log('link', props.path);
+
   return (
     <StyledLink
       transition={{ duration: 0.2 }}

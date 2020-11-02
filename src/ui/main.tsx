@@ -6,7 +6,15 @@ type Props = {
 };
 
 const Main: React.FC<Props> = (props: Props) => {
-  return <Content>{props.children}</Content>;
+  return (
+    <Content
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      {props.children}
+    </Content>
+  );
 };
 
 export default Main;

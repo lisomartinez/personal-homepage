@@ -8,8 +8,6 @@ type Props = {
 };
 
 const Accordion: React.FC<Props> = ({ children, header, openByDefault }) => {
-  // By using `AnimatePresence` to mount and unmount the contents, we can animate
-  // them in and out while also only rendering the contents of open accordions
   const [expanded, expand] = useState(openByDefault);
 
   return (

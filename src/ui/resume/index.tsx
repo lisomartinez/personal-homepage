@@ -7,20 +7,21 @@ import WorkExperience from './works';
 import LanguageList from './languages';
 import EducationList from './education';
 
-type Props = {
-  resume: ResumeModel;
-};
-
 const Container = styled.div`
   margin: 3rem;
   display: flex;
   flex-direction: column;
 `;
 
-const Resume: React.FC<Props> = ({ resume }) => {
+type Props = {
+  resume: ResumeModel;
+  profile: string;
+};
+
+const Resume: React.FC<Props> = ({ resume, profile }) => {
   return (
     <Container>
-      <Basics basics={resume.basics} />
+      <Basics basics={resume.basics} profile={profile} />
       <Skills skills={resume.skills} />
       <EducationList educationList={resume.education} />
       <WorkExperience experience={resume.work} />

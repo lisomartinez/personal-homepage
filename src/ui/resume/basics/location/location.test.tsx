@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import WithTheme from '../../../../utils/testutils';
 import Location from './index';
 import { Location as LocationModel } from '../../../../domain/models/resume';
@@ -15,13 +15,13 @@ const location: LocationModel = {
 
 describe('Location Component', () => {
   it('should display city and region', () => {
-    const { getByTestId } = render(
+    render(
       <WithTheme>
         <Location location={location} />
       </WithTheme>
     );
-    expect(getByTestId('location')).toHaveTextContent(
-      'Vicente Lopez | Buenos Aires'
+    expect(screen.getByTestId('location')).toHaveTextContent(
+      'Buenos Aires - Vicente Lopez - Argentina'
     );
   });
 });

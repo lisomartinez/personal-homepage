@@ -7,7 +7,7 @@ export interface TelegramResponse {
 
 export interface TelegramMessage {
   recipient: string;
-  message: string;
+  content: string;
 }
 
 export const createTelegramMessageFromContact = (
@@ -15,7 +15,7 @@ export const createTelegramMessageFromContact = (
 ): TelegramMessage => {
   return {
     recipient: process.env.LISO_ID,
-    message: `Name: ${message.name}
+    content: `Name: ${message.name}
       Email Address: ${message.email}
       Phone: ${message.phone !== undefined ? message.phone : 'empty'}
       Message: ${message.message}`,

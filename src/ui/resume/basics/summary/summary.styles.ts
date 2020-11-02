@@ -8,4 +8,11 @@ export const Container = styled.div`
   line-height: ${(props) => props.theme.resume.basics.summary.lineHeight};
   font-family: ${(props) => props.theme.resume.basics.summary.fontFamily};
   font-weight: 400;
+
+  @media only screen and (max-width: 440px) {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 2em;
+    padding-bottom: 13rem;
+  }
 `;

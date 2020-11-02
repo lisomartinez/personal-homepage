@@ -36,12 +36,12 @@ export const Navigation: React.FC<Props> = ({ toggle }) => (
       </Link>
     </MenuItem>
     <MenuItem onClick={toggle}>
-      <Link href="/resume">
+      <Link href="/contact">
         <StyledLink>
           <Icon>
             <img src={Cv} />
           </Icon>
-          <span>CV</span>
+          <span>Contacto</span>
         </StyledLink>
       </Link>
     </MenuItem>

@@ -15,8 +15,20 @@ class Level {
     ['Intermediate', { level: 50, color: styles.intermediate }],
     ['Advance', { level: 75, color: styles.advanced }],
     ['Master', { level: 100, color: styles.master }],
-    ['Upper-intermediate', { level: 100, color: styles.master }],
+    ['Upper-intermediate', { level: 75, color: styles.advanced }],
   ]);
+
+  private static translations = new Map<string, string>([
+    ['Beginner', 'Básico'],
+    ['Intermediate', 'Intermedio'],
+    ['Advanced', 'Intermedio-Avanzado'],
+    ['Upper-intermediate', 'Upper-intermediate'],
+    ['Master', 'Avanzado'],
+  ]);
+
+  static translate = (level: string): string => {
+    return Level.translations.get(level);
+  };
 
   static getBarFor = (level: string): LevelIndicator => {
     const indicator = Level.levels.get(level);

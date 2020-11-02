@@ -15,6 +15,10 @@ const Container = styled.article`
   width: 100%;
   height: 100%;
   margin-bottom: 3rem;
+
+  @media only print {
+    break-after: page;
+  }
 `;
 
 const Career = styled.h1`

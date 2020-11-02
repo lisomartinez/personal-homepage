@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-
+import axios from 'axios';
 import {
   ButtonContainer,
   ContactOptions,
@@ -19,6 +19,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { ContactMessage, ContactRequest } from '../../domain/models/contact';
 
 type Props = {
   siteKey: string;
@@ -26,9 +27,30 @@ type Props = {
 
 const Contact: React.FC<Props> = ({ siteKey }) => {
   const [captcha, verify] = useState('');
+  const [name, changeName] = useState('');
+  const [email, changeEmail] = useState('');
+  const [message, changeMessage] = useState('');
 
-  const sendForm = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const sendForm = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
+
+    const contactMessage: ContactMessage = {
+      message: message,
+      name: name,
+      email: email,
+    };
+
+    const req = {
+      data: contactMessage,
+      token: {
+        key: captcha,
+      },
+    };
+    try {
+      await axios.post('api/contact', req);
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   return (
@@ -59,8 +81,10 @@ const Contact: React.FC<Props> = ({ siteKey }) => {
             <TextInput
               tabIndex={1}
               type="text"
-              name={'name'}
+              nam"name"me'}
               placeholder="John Doe"
+              value={name}
+              onChange={(e) => changeName(e.target.value)}
             />
           </FormField>
           <FormField>
@@ -70,6 +94,8 @@ const Contact: React.FC<Props> = ({ siteKey }) => {
               type="text"
               name={'email'}
               placeholder="johndoe@example.com"
+              value={email}
+              onChange={(e) => changeEmail(e.target.value)}
             />
           </FormField>
 
@@ -85,7 +111,13 @@ const Contact: React.FC<Props> = ({ siteKey }) => {
 
           <FormField>
             <Label htmlFor="message">Mensaje</Label>
-            <TextInput type="textarea" name="message" tabIndex={4} />
+            <TextInput
+              type="textarea"
+              name="message"
+              tabIndex={4}
+              value={message}
+              onChange={(e) => changeMessage(e.target.value)}
+            />
           </FormField>
 
           <FormField>

@@ -18,6 +18,5 @@ export const ShortDescription = styled.div`
 export const Name = styled.h1`
   font-size: 3rem;
   font-family: 'Playfair Display', Georgia, serif;
-  //font-weight: bold;
   margin-bottom: 0;
 `;

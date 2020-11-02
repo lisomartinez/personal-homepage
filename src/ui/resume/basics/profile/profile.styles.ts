@@ -6,9 +6,13 @@ export const Container = styled.article`
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  height: 2rem;
+  height: 100%;
   margin-right: 2rem;
   font-size: 1rem;
+
+  @media only screen and (max-width: 440px) {
+    margin-bottom: 1.6rem;
+  }
 `;
 
 export const Network = styled.div`
@@ -24,4 +28,9 @@ export const Link = styled.a`
   font-size: 1.3rem;
 
   color: ${(props) => props.theme.resume.linkColor};
+
+  @media only screen and (max-width: 440px) {
+    margin-bottom: 1.4rem;
+    font-size: 1.6rem;
+  }
 `;

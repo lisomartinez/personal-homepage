@@ -9,9 +9,8 @@ type Props = {
 const Container = styled.div`
   height: 100%;
   width: 100%;
-  background-color: whitesmoke;
-  border: 1px solid black;
-  outline-offset: 0.5rem;
+  background-color: #e6e6e6;
+  box-shadow: 1.5px 1.5px 1.5px 1px rgba(0, 0, 255, 0.2);
 `;
 
 const Filled = styled.div<LevelIndicator>`

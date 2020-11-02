@@ -1,7 +1,7 @@
 import React from 'react';
 import { Profile as ProfileModel } from '../../../../domain/models/resume';
 import Profile from './profile';
-import { Container } from './profile-list.styles';
+import { Container } from './index.styles';
 
 type Props = {
   profiles: ProfileModel[];

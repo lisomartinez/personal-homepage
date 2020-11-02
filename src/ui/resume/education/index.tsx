@@ -11,14 +11,6 @@ const Container = styled.section`
   flex-direction: row;
 `;
 
-const makeHeader = (length: number) => (
-  <TitleComponent>EDUCACIÓN</TitleComponent>
-);
-
-type Props = {
-  educationList: Education[];
-};
-
 const ItemList = styled.section`
   display: flex;
   flex-direction: row;
@@ -26,7 +18,24 @@ const ItemList = styled.section`
   justify-content: flex-start;
   margin-left: ${(props) => props.theme.resume.section.marginLeft};
   margin-top: ${(props) => props.theme.resume.section.marginTop};
+  margin-right: 15rem;
+
+  @media only screen and (max-width: 1450px) {
+    margin-right: 5rem;
+  }
+
+  @media only screen and (max-width: 1100px) {
+    margin-right: 0rem;
+  }
 `;
+
+const makeHeader = (length: number) => (
+  <TitleComponent>EDUCACIÓN</TitleComponent>
+);
+
+type Props = {
+  educationList: Education[];
+};
 
 const EducacionList: React.FC<Props> = ({ educationList }) => {
   return (

@@ -14,6 +14,7 @@ import {
   faBars,
   faEnvelope,
   faHome,
+  faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -33,7 +34,8 @@ library.add(
   faTwitter,
   faGithub,
   faLinkedin,
-  faBars
+  faBars,
+  faPhone
 );
 
 // Only uncomment this method if you have blocking data requirements for
