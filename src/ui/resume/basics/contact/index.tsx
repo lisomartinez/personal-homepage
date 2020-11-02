@@ -21,7 +21,7 @@ const Contact: React.FC<Props> = ({ email, website, profile }) => {
           <Link href={`mailto:${email}`}>{email}</Link>
         </span>
       </Email>
-      {profile === Profiles.DEV && (
+      {profile !== Profiles.DEV && (
         <Website>
           <Icon>
             <FontAwesomeIcon icon={faHome} size="2x" />
@@ -32,6 +32,7 @@ const Contact: React.FC<Props> = ({ email, website, profile }) => {
           </span>
         </Website>
       )}
+
       {profile === Profiles.DEV && (
         <Phone>
           <Icon>

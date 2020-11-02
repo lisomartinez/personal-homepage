@@ -15,6 +15,9 @@ import {
   faEnvelope,
   faHome,
   faPhone,
+  faFlag,
+  faMapMarker,
+  faBirthdayCake,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
@@ -35,7 +38,10 @@ library.add(
   faGithub,
   faLinkedin,
   faBars,
-  faPhone
+  faPhone,
+  faFlag,
+  faMapMarker,
+  faBirthdayCake
 );
 
 // Only uncomment this method if you have blocking data requirements for

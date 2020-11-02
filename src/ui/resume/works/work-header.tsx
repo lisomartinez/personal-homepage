@@ -19,7 +19,7 @@ type Props = {
 };
 
 const WorkHeader: React.FC<Props> = (props: Props) => {
-  const [expanded, expand] = useState(false);
+  const [expanded, expand] = useState(true);
 
   return (
     <Header onClick={() => expand(!expanded)}>
@@ -38,7 +38,7 @@ const WorkHeader: React.FC<Props> = (props: Props) => {
         <StartDate>
           {Calendar.convertDate(props.experience.startDate)}
         </StartDate>
-        <Separator>{' / '}</Separator>
+        <Separator>{' - '}</Separator>
         <EndDate>{Calendar.convertDate(props.experience.endDate)}</EndDate>
       </PeriodHeader>
     </Header>

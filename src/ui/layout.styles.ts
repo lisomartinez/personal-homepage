@@ -33,6 +33,7 @@ export const Container = styled.div`
   }
 
   @media print {
-    overflow: hidden;
+    margin: 0;
+    overflow: visible;
   }
 `;

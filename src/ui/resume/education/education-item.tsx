@@ -18,6 +18,8 @@ const Container = styled.article`
 
   @media only print {
     break-after: page;
+    flex-direction: row;
+    margin: 0 0 1rem 0;
   }
 `;
 
@@ -39,15 +41,41 @@ const CareerBox = styled.div`
   width: 100%;
   margin: 0;
   font-size: 1.4rem;
+
+  @media only print {
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
-const StartedAt = styled.span``;
+const StartedAt = styled.span`
+  font-weight: bold;
+`;
 
-const EndedAt = styled.span``;
+const EndedAt = styled.span`
+  font-weight: bold;
+`;
 
-const Period = styled.div``;
+const Period = styled.div`
+  font-size: 1.4rem;
+
+  flex-grow: 3;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0;
+`;
 const Gpa = styled.div`
   font-size: 1.3rem;
+`;
+
+export const Separator = styled.span`
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: normal;
 `;
 const extractYear = (date: string): string => date.split('-')[0];
 
@@ -56,12 +84,14 @@ const EducationItem: React.FC<Props> = ({ education }: Props) => {
     <Container>
       <CareerBox>
         <Career>{education.studyType}</Career>
-        <Period>
-          <StartedAt>{extractYear(education.startDate)} - </StartedAt>
-          <EndedAt>{extractYear(education.endDate) || 'en curso'}</EndedAt>
-        </Period>
+        <Separator> | </Separator>
+        <Institution>{education.institution}</Institution>
       </CareerBox>
-      <Institution>{education.institution}</Institution>
+      <Period>
+        <StartedAt>{extractYear(education.startDate)} </StartedAt>
+        <Separator> - </Separator>
+        <EndedAt>{extractYear(education.endDate) || 'En curso'}</EndedAt>
+      </Period>
     </Container>
   );
 };

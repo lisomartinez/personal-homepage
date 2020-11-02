@@ -10,6 +10,6 @@ export const MainContainer = styled.div`
   }
 
   @media only print {
-    margin: 1rem 0 0 0;
+    margin: 10px 0 0 0;
   }
 `;

@@ -16,4 +16,13 @@ export const Container = styled.section`
     font-size: 1.6rem;
     flex-direction: column;
   }
+
+  @media only print {
+    height: 100%;
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    align-content: flex-start;
+  }
 `;

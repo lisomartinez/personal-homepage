@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { ReactNode, useState } from 'react';
+import styled from 'styled-components';
 
 type Props = {
   children: ReactNode;
@@ -7,11 +8,17 @@ type Props = {
   openByDefault: boolean;
 };
 
+const Container = styled.div`
+  @media only print {
+    width: 100%;
+  }
+`;
+
 const Accordion: React.FC<Props> = ({ children, header, openByDefault }) => {
   const [expanded, expand] = useState(openByDefault);
 
   return (
-    <div>
+    <Container>
       <motion.header
         data-testid="header"
         initial={false}
@@ -41,7 +48,7 @@ const Accordion: React.FC<Props> = ({ children, header, openByDefault }) => {
           </motion.section>
         )}
       </AnimatePresence>
-    </div>
+    </Container>
   );
 };
 

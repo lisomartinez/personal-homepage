@@ -16,6 +16,17 @@ export const Container = styled.div`
     margin-top: 4rem;
     margin-bottom: 0;
   }
+
+  @media only print {
+    margin: 0.5rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 const Item = styled.div`
@@ -29,15 +40,22 @@ const Item = styled.div`
 
   @media only screen and (max-width: 440px) {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
   }
 `;
 
 export const Email = styled(Item)`
   margin-right: 2rem;
+  @media only print {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Website = styled(Item)`
   margin-right: 2rem;
+  @media only print {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Phone = styled(Item)`
@@ -46,6 +64,11 @@ export const Phone = styled(Item)`
   }
   width: 100%;
   margin-bottom: 2rem;
+
+  @media only print {
+    width: auto;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const Link = styled.a`
@@ -55,4 +78,9 @@ export const Link = styled.a`
 export const Icon = styled.div`
   width: 2.3rem;
   margin-right: 2rem;
+
+  @media only print {
+    font-size: 0.8rem;
+    margin: 0;
+  }
 `;

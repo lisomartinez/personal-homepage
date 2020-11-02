@@ -13,5 +13,7 @@ export const Content = styled(motion.main)`
     grid-row: 1/2;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    margin: 0;
   }
 `;

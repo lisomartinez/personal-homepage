@@ -17,20 +17,18 @@ type Props = {
 const WorkComponent: React.FC<Props> = ({ experience }) => {
   return (
     <Container>
-      <div>
-        <Accordion
-          header={<WorkHeader experience={experience} />}
-          openByDefault={false}
-        >
-          <Website>{experience.website}</Website>
-          <Summary>{experience.summary}</Summary>
-          <HighlightList>
-            {experience.highlights.map((hl) => (
-              <HighlightItem key={hl}>{hl}</HighlightItem>
-            ))}
-          </HighlightList>
-        </Accordion>
-      </div>
+      <Accordion
+        header={<WorkHeader experience={experience} />}
+        openByDefault={true}
+      >
+        <Website>{experience.website}</Website>
+        <Summary>{experience.summary}</Summary>
+        <HighlightList>
+          {experience.highlights.map((hl) => (
+            <HighlightItem key={hl}>{hl}</HighlightItem>
+          ))}
+        </HighlightList>
+      </Accordion>
     </Container>
   );
 };

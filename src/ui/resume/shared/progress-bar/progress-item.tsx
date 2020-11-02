@@ -16,10 +16,17 @@ type BarWidth = {
 const LevelBar = styled.div<BarWidth>`
   width: ${(props: BarWidth) => props.width};
   height: ${(props) => props.theme.resume.progressBar.height};
+
+  @media only print {
+    height: 5px;
+  }
 `;
 
 const Name = styled.h2`
   font-size: ${(props) => props.theme.resume.progressBar.titleFontSize};
+  @media only print {
+    margin: 0 0 2px 0;
+  }
 `;
 
 const LevelStyle = styled.div`
@@ -27,6 +34,10 @@ const LevelStyle = styled.div`
     props.theme.resume.progressBar.level.marginBottom};
   font-size: ${(props) => props.theme.resume.progressBar.level.fontSize};
   font-style: ${(props) => props.theme.resume.progressBar.level.fontStyle};
+
+  @media only print {
+    margin: 0 0 2px 0;
+  }
 `;
 
 const ProgressItem: React.FC<Props> = ({ name, level }) => {

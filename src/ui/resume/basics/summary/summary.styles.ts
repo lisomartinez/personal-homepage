@@ -15,4 +15,8 @@ export const Container = styled.div`
     margin-top: 2em;
     padding-bottom: 13rem;
   }
+
+  @media only print {
+    margin-top: 1rem;
+  }
 `;

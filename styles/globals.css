@@ -7,7 +7,17 @@ body {
   font-size: 10px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
+
+
 }
+
+@media only print {
+
+  html, body {
+    font-size: 8px;
+  }
+}
+
 
 body {
   background-color: white;

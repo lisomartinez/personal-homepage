@@ -9,12 +9,14 @@ basics:
   age: 36
   website: https://lisandro.martinezaledda.com
   summary: Me considero una persona orientada a metas, responsable y comprometida cuyo objetivo en la actualidad es insertarse laboralmente en
-    la industria del software. Poseo conocimientos del ecosistema Java y, en menor medida, de la parte de frontend. En la actualidad me
-    encuentro cursando una carrera de posgrado sobre ingeniería de software.
+    la industria del software. Soy un desarrollador orientado al backend que posee conocimientos del ecosistema Java y, en menor medida, de la parte de frontend.
+    Entre mis intereses se encuentra la programación funcional. Después de haber aprendido las bases de Elixir, estoy enfocado en el
+    estudio del funcionamiento del OTP y de Phoenix.
+    En la actualidad estoy realizando una carrera de posgrado sobre ingeniería de software.
   location:
     address: 'Valentín Gómez 3352 2do 11'
     postalCode: '1191'
-    city: Buenos Aires
+    city: Ciudad Autónoma de Buenos Aires
     countryCode: Argentina
     region: Almagro
   profiles:
@@ -39,8 +41,8 @@ work:
     description: Awesome compression company
     position: Administrador de redes y sistemas operativos
     url: ''
-    startDate: '2015-5-01'
-    endDate: '2009-4-30'
+    startDate: '2009-5-31'
+    endDate: '2015-5-01'
     summary: 'Configuración e implementación de los equipos de infraestructura del Instituto (Firewalls, routers y switches). Administración de servicios
               diversos sobre sistemas FreeBSD (BIND, ISC-DHCP, Apache HTTPD entre otros)'
     highlights: [ ]
@@ -49,8 +51,8 @@ work:
     description: Awesome compression company
     position: Soporte técnico
     url: ''
-    startDate: '2006-5-31'
-    endDate: '2015-6-01'
+    startDate: '2006-5-1'
+    endDate: '2009-4-30'
     summary: 'Mantenimiento de los equipos informáticos del instituto y resolución de problemas de red'
     highlights: [ ]
   - company: Atento Argentina - Speedy
@@ -59,7 +61,7 @@ work:
     position: Asistente teléfonico
     url: ''
     startDate: '2005-5-01'
-    endDate: '2006-5-31'
+    endDate: '2006-3-31'
     summary: 'Atención a los usuarios de advance y speedy para la configuración y resolución de problemas de conexión a internet'
     highlights: [ ]
 volunteer: [ ]
@@ -130,7 +132,6 @@ skills:
       - JUnit
       - Mockito
       - Jest
-      - Hibernate
   - name: TDD
     level: Beginner
     keywords: [ ]
@@ -138,9 +139,18 @@ skills:
     level: Beginner
     keywords:
       - Docker
-      - Docker compose
+      - Docker Compose
   - name: Linux
     level: Intermediate
+    keywords: [ ]
+  - name: Elixir
+    level: Intermediate
+    keywords: [ ]
+  - name: OTP
+    level: Beginner
+    keywords: [ ]
+  - name: Phoenix
+    level: Beginner
     keywords: [ ]
 languages:
   - language: Ingles

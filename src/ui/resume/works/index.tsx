@@ -25,6 +25,10 @@ export const List = styled.div`
   @media only screen and (max-width: 1100px) {
     margin-right: 0rem;
   }
+
+  @media only print {
+    margin-right: 0;
+  }
 `;
 
 const WorkExperience: React.FC<Props> = ({ experience }) => {

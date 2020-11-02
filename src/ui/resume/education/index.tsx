@@ -27,6 +27,10 @@ const ItemList = styled.section`
   @media only screen and (max-width: 1100px) {
     margin-right: 0rem;
   }
+
+  @media only print {
+    margin-right: 0;
+  }
 `;
 
 const makeHeader = (length: number) => (

@@ -4,6 +4,10 @@ export const Container = styled.article`
   margin-top: 2rem;
   margin-left: ${(props) => props.theme.resume.section.marginLeft};
   font-size: ${(props) => props.theme.resume.fontSize};
+
+  @media only print {
+    margin-top: 10px;
+  }
 `;
 
 export const Website = styled.a`
@@ -12,6 +16,9 @@ export const Website = styled.a`
 
 export const Summary = styled.div`
   margin: 1rem;
+  @media only print {
+    margin-top: 10px;
+  }
 `;
 
 export const HighlightList = styled.ul`

@@ -7,6 +7,10 @@ export const Title = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   cursor: pointer;
+
+  @media only print {
+    width: 100%;
+  }
 `;
 
 export const TitleText = styled.div`

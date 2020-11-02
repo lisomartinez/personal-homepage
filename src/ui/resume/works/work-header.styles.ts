@@ -43,6 +43,7 @@ export const Icon = styled.div`
 export const Separator = styled.span`
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  font-weight: normal;
 `;
 
 export const PeriodHeader = styled.div`

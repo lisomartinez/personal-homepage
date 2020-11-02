@@ -81,7 +81,7 @@ const Contact: React.FC<Props> = ({ siteKey }) => {
             <TextInput
               tabIndex={1}
               type="text"
-              nam"name"me'}
+              name="name"
               placeholder="John Doe"
               value={name}
               onChange={(e) => changeName(e.target.value)}
