@@ -62,7 +62,6 @@ const EducationItem: React.FC<Props> = ({ education }: Props) => {
         </Period>
       </CareerBox>
       <Institution>{education.institution}</Institution>
-      <Gpa>{education.gpa ? `Promedio: ${education.gpa}` : null}</Gpa>
     </Container>
   );
 };

@@ -32,7 +32,7 @@ work:
     url: ''
     startDate: '2015-6-01'
     endDate: 'actualidad'
-    summary: ''
+    summary: 'Asistencia técnica a diversas empresas. Principalmente a estudios de grabación musical'
     highlights: [ ]
   - company: Instituto Nacional de Tecnología Industrial
     location: Buenos Aires, Argentina
@@ -41,7 +41,8 @@ work:
     url: ''
     startDate: '2015-5-01'
     endDate: '2009-4-30'
-    summary: ''
+    summary: 'Configuración e implementación de los equipos de infraestructura del Instituto (Firewalls, routers y switches). Administración de servicios
+              diversos sobre sistemas FreeBSD (BIND, ISC-DHCP, Apache HTTPD entre otros)'
     highlights: [ ]
   - company: Instituto Nacional de Tecnología Industrial
     location: Buenos Aires, Argentina
@@ -50,7 +51,7 @@ work:
     url: ''
     startDate: '2006-5-31'
     endDate: '2015-6-01'
-    summary: ''
+    summary: 'Mantenimiento de los equipos informáticos del instituto y resolución de problemas de red'
     highlights: [ ]
   - company: Atento Argentina - Speedy
     location: Buenos Aires, Argentina
@@ -59,7 +60,7 @@ work:
     url: ''
     startDate: '2005-5-01'
     endDate: '2006-5-31'
-    summary: ''
+    summary: 'Atención a los usuarios de advance y speedy para la configuración y resolución de problemas de conexión a internet'
     highlights: [ ]
 volunteer: [ ]
 education:

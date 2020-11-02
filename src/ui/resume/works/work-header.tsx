@@ -29,6 +29,7 @@ const WorkHeader: React.FC<Props> = (props: Props) => {
         </Icon>
         <Position>
           {props.experience.position}
+          <Separator>|</Separator>
           <Company>{props.experience.company}</Company>
         </Position>
       </PositionHeader>
@@ -37,7 +38,7 @@ const WorkHeader: React.FC<Props> = (props: Props) => {
         <StartDate>
           {Calendar.convertDate(props.experience.startDate)}
         </StartDate>
-        <span>{'  /  '}</span>
+        <Separator>{' / '}</Separator>
         <EndDate>{Calendar.convertDate(props.experience.endDate)}</EndDate>
       </PeriodHeader>
     </Header>

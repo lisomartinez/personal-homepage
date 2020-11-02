@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Position = styled.div`
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
 `;
 
 export const StartDate = styled.span`
