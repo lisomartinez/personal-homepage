@@ -13,12 +13,7 @@ import {
   faMapMarker,
 } from '@fortawesome/free-solid-svg-icons';
 import { Profiles } from '../../../utils/profiles';
-
-type Props = {
-  basics: BasicsModel;
-  profile: string;
-};
-
+import { Languages } from '../../../utils/language';
 export const Icon = styled.div`
   width: 2.3rem;
   margin-right: 2rem;
@@ -89,7 +84,18 @@ export const Separator = styled.span`
   font-weight: normal;
 `;
 
-const Basics: React.FC<Props> = ({ basics, profile }) => {
+type Props = {
+  basics: BasicsModel;
+  profile: string;
+  language: string;
+};
+
+const Basics: React.FC<Props> = ({ basics, profile, language }) => {
+  const nationality =
+    language === Languages.EN ? 'Nationality' : 'Nacionalidad';
+  const dateOfBirth =
+    language === Languages.EN ? 'Date of birth' : 'Fecha de nacimiento';
+  console.log(language);
   return (
     <Container>
       <Name>{basics.name}</Name>
@@ -100,7 +106,9 @@ const Basics: React.FC<Props> = ({ basics, profile }) => {
           <Icon>
             <FontAwesomeIcon icon={faFlag} size="2x" />
           </Icon>
-          <Link>Nacionalidad: {basics.nationality}</Link>
+          <Link>
+            {nationality}: {basics.nationality}
+          </Link>
         </Nationality>
       )}
 
@@ -109,7 +117,7 @@ const Basics: React.FC<Props> = ({ basics, profile }) => {
           <Icon>
             <FontAwesomeIcon icon={faBirthdayCake} size="2x" />
           </Icon>
-          <Link>Fecha de nacimiento: 13 de octubre de 1984</Link>
+          <Link>{dateOfBirth}: 13 de octubre de 1984</Link>
         </BirthDate>
       )}
 

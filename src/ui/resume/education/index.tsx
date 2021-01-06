@@ -5,6 +5,7 @@ import EducationItem from './education-item';
 import { MainContainer } from '../shared/resume.styles';
 import Accordion from '../../accordion/accordion';
 import TitleComponent from '../shared/title';
+import { Languages } from '../../../utils/language';
 
 const Container = styled.section`
   display: flex;
@@ -33,18 +34,23 @@ const ItemList = styled.section`
   }
 `;
 
-const makeHeader = (length: number) => (
-  <TitleComponent>EDUCACIÓN</TitleComponent>
-);
+const makeHeader = (length: number, language: string) => {
+  const education = language === Languages.EN ? 'EDUCATION' : 'EDUCACIÓN';
+  return <TitleComponent> {education}</TitleComponent>;
+};
 
 type Props = {
   educationList: Education[];
+  language: string;
 };
 
-const EducacionList: React.FC<Props> = ({ educationList }) => {
+const EducacionList: React.FC<Props> = ({ educationList, language }) => {
   return (
     <MainContainer>
-      <Accordion header={makeHeader(educationList.length)} openByDefault={true}>
+      <Accordion
+        header={makeHeader(educationList.length, language)}
+        openByDefault={true}
+      >
         <ItemList>
           {educationList.map((education: Education) => (
             <EducationItem key={education.studyType} education={education} />

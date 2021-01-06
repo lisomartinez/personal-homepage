@@ -3,11 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import ProgressBar from './progress-bar';
 import styled from 'styled-components';
 import Level from './level';
-
-type Props = {
-  level: string;
-  name: string;
-};
+import { Languages } from '../../../../utils/language';
 
 type BarWidth = {
   width: string;
@@ -40,9 +36,22 @@ const LevelStyle = styled.div`
   }
 `;
 
-const ProgressItem: React.FC<Props> = ({ name, level }) => {
+type Props = {
+  level: string;
+  name: string;
+  language: string;
+};
+
+const ProgressItem: React.FC<Props> = ({ name, level, language }) => {
   const titleHeader = useRef<HTMLHeadingElement>(null);
   const [width, setWidth] = useState('0px');
+
+  const levelComponent =
+    language === Languages.EN ? (
+      <LevelStyle>{level}</LevelStyle>
+    ) : (
+      <LevelStyle>{Level.translate(level)}</LevelStyle>
+    );
 
   useEffect(() => {
     if (titleHeader === null || titleHeader.current === null) {
@@ -54,7 +63,7 @@ const ProgressItem: React.FC<Props> = ({ name, level }) => {
   return (
     <React.Fragment>
       <Name ref={titleHeader}>{name}</Name>
-      <LevelStyle>{Level.translate(level)}</LevelStyle>
+      {levelComponent}
       <LevelBar width={'150px'}>
         <ProgressBar level={level} />
       </LevelBar>

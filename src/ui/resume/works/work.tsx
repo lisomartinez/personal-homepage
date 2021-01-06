@@ -12,13 +12,14 @@ import {
 
 type Props = {
   experience: Work;
+  language: string;
 };
 
-const WorkComponent: React.FC<Props> = ({ experience }) => {
+const WorkComponent: React.FC<Props> = ({ experience, language }) => {
   return (
     <Container>
       <Accordion
-        header={<WorkHeader experience={experience} />}
+        header={<WorkHeader experience={experience} language={language} />}
         openByDefault={true}
       >
         <Website>{experience.website}</Website>

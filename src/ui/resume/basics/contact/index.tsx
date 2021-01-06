@@ -39,7 +39,7 @@ const Contact: React.FC<Props> = ({ email, website, profile }) => {
             <FontAwesomeIcon icon={faPhone} size="2x" />
           </Icon>
           <span>
-            <Link href="tel:+541154870746">11-5487-0746</Link>
+            <Link href="tel:+5491154870746">+54 9 11-5487-0746</Link>
           </span>
         </Phone>
       )}

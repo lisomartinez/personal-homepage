@@ -5,14 +5,7 @@ import WorkComponent from './work';
 import TitleComponent from '../shared/title';
 import Accordion from '../../accordion/accordion';
 import styled from 'styled-components';
-
-type Props = {
-  experience: Work[];
-};
-
-const makeHeader = (expanded: boolean) => (
-  <TitleComponent>EXPERIENCIA</TitleComponent>
-);
+import { Languages } from '../../../utils/language';
 
 export const List = styled.div`
   margin-top: ${(props) => props.theme.resume.section.marginTop};
@@ -31,17 +24,27 @@ export const List = styled.div`
   }
 `;
 
-const WorkExperience: React.FC<Props> = ({ experience }) => {
-  const [expanded, setExpanded] = useState<boolean>(true);
+type Props = {
+  experience: Work[];
+  language: string;
+};
 
+const makeHeader = (expanded: boolean, title) => (
+  <TitleComponent>{title}</TitleComponent>
+);
+
+const WorkExperience: React.FC<Props> = ({ experience, language }) => {
+  const [expanded, setExpanded] = useState<boolean>(true);
+  const title = language === Languages.EN ? 'EXPERIENCE' : 'EXPERIENCIA';
   return (
     <MainContainer>
-      <Accordion openByDefault={true} header={makeHeader(expanded)}>
+      <Accordion openByDefault={true} header={makeHeader(expanded, title)}>
         <List>
           {experience.map((work) => (
             <WorkComponent
               key={work.company + work.position}
               experience={work}
+              language={language}
             />
           ))}
         </List>

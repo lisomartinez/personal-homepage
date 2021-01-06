@@ -19,20 +19,32 @@ const Container = styled.div`
   }
 `;
 
+const ImageContainer = styled.div`
+  display: none;
+  @media only print {
+    display: flex;
+  }
+`;
+
 type Props = {
   resume: ResumeModel;
   profile: string;
+  language: string;
 };
 
-const Resume: React.FC<Props> = ({ resume, profile }) => {
+const Resume: React.FC<Props> = ({ resume, profile, language }) => {
   return (
     <Container>
-      <Basics basics={resume.basics} profile={profile} />
-      <Skills skills={resume.skills} />
-      {profile === Profiles.DEV && <Avatar />}
-      <EducationList educationList={resume.education} />
-      <WorkExperience experience={resume.work} />
-      <LanguageList languages={resume.languages} />
+      <Basics basics={resume.basics} profile={profile} language={language} />
+      <Skills skills={resume.skills} language={language} />
+      {profile === Profiles.DEV && (
+        <ImageContainer>
+          <Avatar />
+        </ImageContainer>
+      )}
+      <EducationList educationList={resume.education} language={language} />
+      <WorkExperience experience={resume.work} language={language} />
+      <LanguageList languages={resume.languages} language={language} />
     </Container>
   );
 };

@@ -16,6 +16,7 @@ import {
 
 type Props = {
   experience: Work;
+  language: string;
 };
 
 const WorkHeader: React.FC<Props> = (props: Props) => {
@@ -36,10 +37,12 @@ const WorkHeader: React.FC<Props> = (props: Props) => {
 
       <PeriodHeader>
         <StartDate>
-          {Calendar.convertDate(props.experience.startDate)}
+          {Calendar.convertDate(props.experience.startDate, props.language)}
         </StartDate>
         <Separator>{' - '}</Separator>
-        <EndDate>{Calendar.convertDate(props.experience.endDate)}</EndDate>
+        <EndDate>
+          {Calendar.convertDate(props.experience.endDate, props.language)}
+        </EndDate>
       </PeriodHeader>
     </Header>
   );

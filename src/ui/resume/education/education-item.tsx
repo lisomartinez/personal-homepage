@@ -8,7 +8,7 @@ type Props = {
 
 const Container = styled.article`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
@@ -37,7 +37,7 @@ const Institution = styled.h2`
 const CareerBox = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
   margin: 0;
   font-size: 1.4rem;

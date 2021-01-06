@@ -5,12 +5,13 @@ import ProgressItem from '../../shared/progress-bar/progress-item';
 
 type Props = {
   skill: SkillModel;
+  language: string;
 };
 
-const Skill: React.FC<Props> = ({ skill }) => {
+const Skill: React.FC<Props> = ({ skill, language }) => {
   return (
     <Container>
-      <ProgressItem level={skill.level} name={skill.name} />
+      <ProgressItem level={skill.level} name={skill.name} language={language} />
       <KeywordList>
         {skill.keywords.map((s) => (
           <Keyword key={s}>{s}</Keyword>

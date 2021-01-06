@@ -1,0 +1,144 @@
+---
+basics:
+  name: Lisandro Martinez
+  label: Software Developer
+  nationality: Argentinean
+  image: ''
+  email: lisandromartinez@gmail.com
+  phone: '+54 9 11-5487-0746'
+  age: 36
+  website: https://lisandro.martinezaledda.com
+  summary: I consider myself a goal-oriented, responsible and committed person whose goal is to get a job in the software industry. I am a backend oriented developer who has knowledge of the Java ecosystem and, to a lesser extent, of several of the existing frontend frameworks.  I am currently pursuing a graduate degree in software engineering.
+  location:
+    address: 'Valentín Gómez 3352 2do 11'
+    postalCode: '1191'
+    city: Autonomous City of Buenos Aires
+    countryCode: Argentina
+    region: Almagro
+  profiles:
+    - network: LinkedIn
+      username: lisandro-martinez
+      url: https://www.linkedin.com/in/lisandro-martinez/
+    - network: GitHub
+      username: lisomartinez
+      url: https://github.com/lisomartinez
+work:
+  - company: Freelance
+    location: Buenos Aires, Argentina
+    description: Awesome compression company
+    position: Technical Assistant
+    url: ''
+    startDate: '2015-6-01'
+    endDate: 'present'
+    summary: 'Technical assistance to various companies. Mainly to music recording studios'
+    highlights: [ ]
+  - company: National Institute of Industrial Technology
+    location: Buenos Aires, Argentina
+    description: Awesome compression company
+    position: System Administrator
+    url: ''
+    startDate: '2009-5-31'
+    endDate: '2015-5-01'
+    summary: "Configuration and implementation of the Institute's infrastructure equipment (Firewalls, routers and switches). Administration of services on FreeBSD systems (BIND, ISC-DHCP, Apache HTTPD among others)"
+    highlights: [ ]
+  - company: National Institute of Industrial Technology
+    location: Buenos Aires, Argentina
+    description: Awesome compression company
+    position: Technical Support
+    url: ''
+    startDate: '2006-5-1'
+    endDate: '2009-4-30'
+    summary: "Maintenance of the institute's computer equipment and network troubleshooting"
+    highlights: [ ]
+  - company: Atento Argentina - Speedy
+    location: Buenos Aires, Argentina
+    description: Awesome compression company
+    position: Help Desk
+    url: ''
+    startDate: '2005-5-01'
+    endDate: '2006-3-31'
+    summary: 'Assistance to Advance and Speedy users for configuration and troubleshooting of internet connection'
+    highlights: [ ]
+volunteer: [ ]
+education:
+  - institution: University of Buenos Aires (UBA)
+    area: Social Science
+    studyType: Bachelor in Sociology
+    startDate: '2005-5-01'
+    endDate: '2015-1-01'
+    status: Finalizado
+    gpa: '8.81'
+    comments: [ ]
+  - institution: Inter-American Open University (UAI)
+    area: Software Engineering
+    studyType: Analyst programmer (associate degree - final project pending)
+    startDate: '2018-04-01'
+    endDate: '2020-07-20'
+    status: end-of-career work pending
+    gpa: '8.81'
+    comments: [ ]
+  - institution: Inter-American Open University (UAI)
+    area: Software Engineering
+    studyType: Specialization in Software Engineering (graduate career)
+    startDate: '2020-08-01'
+    endDate: '2022'
+    gpa: ''
+    status: Expected completion 2022
+    comments: [ ]
+awards: [ ]
+publications: [ ]
+skills:
+  - name: Frontend Development
+    level: Beginner
+    keywords:
+      - HTML
+      - CSS
+      - Javascript
+      - Typescript
+      - React
+  - name: Version Control
+    level: Intermediate
+    keywords:
+      - Git
+      - GitFlow
+      - GitHub
+  - name: SQL
+    level: Intermediate
+    keywords:
+      - Sql Server
+  - name: Java
+    level: Intermediate
+    keywords:
+      - Spring
+      - Maven
+      - Gradle
+      - Hibernate
+  - name: Testing
+    level: Intermediate
+    keywords:
+      - JUnit
+      - Mockito
+      - Jest
+  - name: TDD
+    level: Beginner
+    keywords: [ ]
+  - name: Containers
+    level: Beginner
+    keywords:
+      - Docker
+      - Docker Compose
+  - name: Linux
+    level: Intermediate
+    keywords: [ ]
+languages:
+  - language: English
+    fluency: Upper-intermediate
+  - language: German
+    fluency: Beginner
+interests: [ ]
+references: [ ]
+projects: [ ]
+meta:
+  canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json
+  version: v1.0.0
+  lastModified: '2017-12-24T15:53:00'

@@ -9,17 +9,18 @@ import { MainContainer } from '../shared/resume.styles';
 
 type Props = {
   skills: SkillModel[];
+  language: string;
 };
 
 const makeHeader = (length: number) => <TitleComponent>SKILLS</TitleComponent>;
 
-const Skills: React.FC<Props> = ({ skills }) => {
+const Skills: React.FC<Props> = ({ skills, language }) => {
   return (
     <MainContainer>
       <Accordion header={makeHeader(skills.length)} openByDefault={true}>
         <SkillList>
           {skills.map((skill) => (
-            <Skill key={skill.name} skill={skill} />
+            <Skill key={skill.name} skill={skill} language={language} />
           ))}
         </SkillList>
       </Accordion>
