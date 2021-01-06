@@ -50,7 +50,7 @@ class Calendar {
   };
 
   static mapToMonth = (date: string, language: string): string => {
-    const dateFields = date.spli"-"-');
+    const dateFields = date.split('-');
     const year = dateFields[0];
     const month =
       language === Languages.EN
