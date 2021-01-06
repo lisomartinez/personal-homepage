@@ -96,6 +96,7 @@ skills:
       - Javascript
       - Typescript
       - React
+      - Vue
   - name: Version Control
     level: Intermediate
     keywords:

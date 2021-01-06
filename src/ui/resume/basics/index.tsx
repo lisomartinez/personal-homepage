@@ -93,8 +93,10 @@ type Props = {
 const Basics: React.FC<Props> = ({ basics, profile, language }) => {
   const nationality =
     language === Languages.EN ? 'Nationality' : 'Nacionalidad';
-  const dateOfBirth =
+  const dateOfBirthLabel =
     language === Languages.EN ? 'Date of birth' : 'Fecha de nacimiento';
+
+  const dateOfBirth = language === Languages.EN ? '10-13-1984' : '13-10-1984';
   console.log(language);
   return (
     <Container>
@@ -117,7 +119,9 @@ const Basics: React.FC<Props> = ({ basics, profile, language }) => {
           <Icon>
             <FontAwesomeIcon icon={faBirthdayCake} size="2x" />
           </Icon>
-          <Link>{dateOfBirth}: 13 de octubre de 1984</Link>
+          <Link>
+            {dateOfBirthLabel}: {dateOfBirth}
+          </Link>
         </BirthDate>
       )}
 
