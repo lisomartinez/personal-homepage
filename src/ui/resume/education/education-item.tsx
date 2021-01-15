@@ -10,7 +10,7 @@ const Container = styled.article`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-content: flex-start;
+  align-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -38,13 +38,17 @@ const Institution = styled.h2`
   color: darkmagenta;
   font-weight: 300;
   font-size: 0.8em;
+
+  @media only print {
+    margin: 0;
+  }
   //margin-right: 0.6em;
 `;
 
 const CareerBox = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   margin: 0;
@@ -52,7 +56,7 @@ const CareerBox = styled.div`
 
   @media only print {
     justify-content: flex-start;
-    align-content: flex-start;
+    align-content: center;
     align-items: flex-start;
   }
 `;
