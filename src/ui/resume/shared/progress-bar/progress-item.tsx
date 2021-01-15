@@ -14,7 +14,8 @@ const LevelBar = styled.div<BarWidth>`
   height: ${(props) => props.theme.resume.progressBar.height};
 
   @media only print {
-    height: 5px;
+    height: 7px;
+    width: 100px;
   }
 `;
 

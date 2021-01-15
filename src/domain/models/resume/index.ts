@@ -93,6 +93,12 @@ export interface Reference {
   reference: string;
 }
 
+export interface Project {
+  title: string;
+  description: string;
+  link: string;
+}
+
 export interface Resume {
   basics: Basics;
   work: Work[];
@@ -104,4 +110,5 @@ export interface Resume {
   languages: Language[];
   interests: Interest[];
   references: Reference[];
+  projects: Project[];
 }

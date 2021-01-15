@@ -17,6 +17,6 @@ export const Container = styled.div`
   }
 
   @media only print {
-    margin: 4rem 4rem;
+    margin: 2rem 2rem;
   }
 `;

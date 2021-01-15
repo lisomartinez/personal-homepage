@@ -12,6 +12,7 @@ export const Keyword = styled.ul`
   background-color: #dfeaf1;
   color: #255088;
   padding: 0.4rem;
+  font-size: 1.1rem;
   margin: 0.5rem 0.5rem 0.5rem 0;
   box-shadow: 0.3px 0.3px 0.3px 0.3px rgba(0, 0, 255, 0.2);
   @media only print {

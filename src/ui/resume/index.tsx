@@ -8,14 +8,14 @@ import LanguageList from './languages';
 import EducationList from './education';
 import Avatar from '../sidebar/avatar/avatar';
 import { Profiles } from '../../utils/profiles';
-
+import ProjectList from './projects';
 const Container = styled.div`
   margin: 3rem;
   display: flex;
   flex-direction: column;
 
   @media only print {
-    margin-top: 0;
+    margin: 0;
   }
 `;
 
@@ -45,6 +45,7 @@ const Resume: React.FC<Props> = ({ resume, profile, language }) => {
       <EducationList educationList={resume.education} language={language} />
       <WorkExperience experience={resume.work} language={language} />
       <LanguageList languages={resume.languages} language={language} />
+      <ProjectList projects={resume.projects} language={language} />
     </Container>
   );
 };

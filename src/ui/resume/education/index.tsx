@@ -9,7 +9,16 @@ import { Languages } from '../../../utils/language';
 
 const Container = styled.section`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: 3rem;
+
+  @media only screen and (max-width: 440px) {
+    margin: 3rem 0 0 0;
+  }
+
+  @media only print {
+    margin: 10px 0 1rem 0;
+  }
 `;
 
 const ItemList = styled.section`
@@ -46,7 +55,7 @@ type Props = {
 
 const EducacionList: React.FC<Props> = ({ educationList, language }) => {
   return (
-    <MainContainer>
+    <Container>
       <Accordion
         header={makeHeader(educationList.length, language)}
         openByDefault={true}
@@ -57,7 +66,7 @@ const EducacionList: React.FC<Props> = ({ educationList, language }) => {
           ))}
         </ItemList>
       </Accordion>
-    </MainContainer>
+    </Container>
   );
 };
 

@@ -66,14 +66,6 @@ work:
     highlights: [ ]
 volunteer: [ ]
 education:
-  - institution: E.M.M Nro. 5 D.E 10
-    area: Comercial
-    studyType: Perito Mercantil
-    startDate: '1998-6-01'
-    endDate: '2002-12-01'
-    status: Finalizado
-    gpa: '8.81'
-    comments: [ ]
   - institution: Universidad de Buenos Aires
     area: Ciencias Sociales
     studyType: Licenciado en Sociología
@@ -101,6 +93,36 @@ education:
 awards: [ ]
 publications: [ ]
 skills:
+  - name: Java
+    level: Intermediate
+    keywords:
+      - Maven
+      - Gradle
+  - name: Spring
+    level: Intermediate
+    keywords:
+      - Spring
+      - JPA / Hibernate
+      - MVC
+      - Webflux
+      - REST
+  - name: Testing
+    level: Intermediate
+    keywords:
+      - Unitarios
+      - Integración
+      - JUnit
+      - Mockito
+      - Jest
+  - name: TDD
+    level: Beginner
+    keywords:
+      - Inside-out
+  - name: Contenedores
+    level: Beginner
+    keywords:
+      - Docker
+      - Docker Compose
   - name: Desarrollo Frontend
     level: Beginner
     keywords:
@@ -108,50 +130,25 @@ skills:
       - CSS
       - Javascript
       - Typescript
-      - React
+      - React / Next
+      - Vue / Nuxt
   - name: Control de Versiones
     level: Intermediate
     keywords:
       - Git
-      - GitFlow
+      - Git flow
       - GitHub
   - name: SQL
     level: Intermediate
     keywords:
       - Sql Server
-  - name: Java
-    level: Intermediate
-    keywords:
-      - Spring
-      - Maven
-      - Gradle
-      - Hibernate
-  - name: Testing
-    level: Intermediate
-    keywords:
-      - JUnit
-      - Mockito
-      - Jest
-  - name: TDD
-    level: Beginner
-    keywords: [ ]
-  - name: Contenedores
-    level: Beginner
-    keywords:
-      - Docker
-      - Docker Compose
   - name: Linux
     level: Intermediate
     keywords: [ ]
-  - name: Elixir
-    level: Intermediate
-    keywords: [ ]
-  - name: OTP
+  - name: Node
     level: Beginner
-    keywords: [ ]
-  - name: Phoenix
-    level: Beginner
-    keywords: [ ]
+    keywords:
+      - serverless
 languages:
   - language: Ingles
     fluency: Upper-intermediate
@@ -159,7 +156,46 @@ languages:
     fluency: Beginner
 interests: [ ]
 references: [ ]
-projects: [ ]
+projects:
+  - title: job seeker (java/spring)
+    description: API para el seguimiento de las búsquedas a las que me postulado
+    link: https://github.com/lisomartinez/jobseeker-java
+  - title: token-auth (java/spring/security)
+    description: Proof of Concept de generacion de codigo para autentication multi-factor
+    link: https://github.com/lisomartinez/token-auth
+  - title: spring MVC security (java)
+    description: Proof of Concept de autentication usando Basic Auth para un cliente pesado
+    link: https://github.com/lisomartinez/spring-mvc-security
+  - title: kacman (kotlin)
+    description: aplicacion CLI para la gestión de paquetes de ArchLinux
+    link: https://github.com/lisomartinez/spring-mvc-security
+  - title: alquileres temporales (js/vue/nuxt)
+    description: aplicación de patrones de usabilidad. Desarrollado en el marco de una materia de la especializacion en ingenieria de software
+    link: https://github.com/lisomartinez/alquileres-uai-usabilidad
+  - title: gilded rose kata (java/kata/refactoring)
+    description: aplicación de refactorings
+    link: https://github.com/lisomartinez/gilded-rose-kata-java
+  - title: pagina web personal (js/react/next)
+    description: aplicacion JAMStack para la generación de mi web personal (https://lisandromartinezaledda.com)
+    link: https://github.com/lisomartinez/personal-homepage
+  - title: show tracker (java/spring/webflux)
+    description: API rest con programación funcional asíncrona para el seguimiento de series de television [en progreso].
+    link: https://github.com/lisomartinez/show-tracker
+  - title: healthy diet (java/tdd)
+    description: modelo de dominio para la gestion de dietas.
+    link: https://github.com/lisomartinez/healthy-diet
+  - title: jyts (java/spring/CLI)
+    description: applicación CLI para la consulta del catalogo de YTS [descarga de peliculas por torrent]
+    link: https://github.com/lisomartinez/jyts
+  - title: liflix (java/spring)
+    description: api REST para la búsqueda de torrents
+    link: https://github.com/lisomartinez/liflix
+  - title: json-to-db-jdbc (java/jdbc)
+    description: Parseo de archivos json y persistencia en BBDD
+    link: https://github.com/lisomartinez/json-to-db-jdbc
+  - title: jmonitor (java)
+    description: Watcher del filesystem
+    link: https://github.com/lisomartinez/jMonitor/tree/develop/src/main
 meta:
   canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json
   version: v1.0.0

@@ -13,6 +13,10 @@ export const SkillList = styled.div`
   justify-content: flex-start;
   margin-left: ${(props) => props.theme.resume.section.marginLeft};
   margin-top: ${(props) => props.theme.resume.section.marginTop};
+
+  @media only print {
+    margin-top: 3rem;
+  }
 `;
 
 export const SkillNumber = styled.span`

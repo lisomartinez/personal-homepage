@@ -129,7 +129,7 @@ skills:
       - Docker
       - Docker Compose
   - name: Linux
-    level: Intermediate
+    level: Advance
     keywords: [ ]
 languages:
   - language: English
