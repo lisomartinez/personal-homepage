@@ -28,7 +28,7 @@ const ProjectLink: React.FC<Props> = ({ link }) => {
   return (
     <Container>
       <Tag>REPOSITORIO:</Tag>
-      <Link>{link}</Link>
+      <Link href={link}>{link}</Link>
     </Container>
   );
 };
