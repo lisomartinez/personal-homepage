@@ -4,6 +4,7 @@ export const Position = styled.div`
   font-weight: bold;
   display: flex;
   flex-direction: row;
+  align-items: center;
 `;
 
 export const StartDate = styled.span`
@@ -22,15 +23,26 @@ export const Header = styled.div`
 `;
 
 export const Company = styled.div`
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'JetBrains Mono', monospace;
+  color: darkmagenta;
+  font-weight: 300;
+  font-size: 0.8em;
+  //margin-right: 0.6em;
+`;
+
+const Tag = styled.span`
+  font-family: 'JetBrains Mono', monospace;
+  color: darkmagenta;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-right: 0.6em;
 `;
 
 export const PositionHeader = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   align-content: flex-start;
   flex-grow: 1;
   flex-shrink: 1;

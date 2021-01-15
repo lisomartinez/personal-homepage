@@ -11,10 +11,10 @@ const Container = styled.article`
   flex-direction: row;
   justify-content: flex-start;
   align-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   height: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 
   @media only print {
     break-after: page;
@@ -25,19 +25,27 @@ const Container = styled.article`
 
 const Career = styled.h1`
   margin: 0;
+  font-size: 1.3rem;
 `;
 
 const Institution = styled.h2`
-  font-size: 1.4rem;
-  font-weight: 400;
-  font-style: italic;
-  margin: 0;
+  //font-size: 1.4rem;
+  //font-weight: 400;
+  //font-style: italic;
+  //margin: 0;
+
+  font-family: 'JetBrains Mono', monospace;
+  color: darkmagenta;
+  font-weight: 300;
+  font-size: 0.8em;
+  //margin-right: 0.6em;
 `;
 
 const CareerBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: start;
+  align-items: center;
   width: 100%;
   margin: 0;
   font-size: 1.4rem;

@@ -10,7 +10,7 @@ import { Languages } from '../../../utils/language';
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  margin: 3rem 3rem 3rem 0.8rem;
 
   @media only screen and (max-width: 440px) {
     margin: 3rem 0 0 0;
@@ -28,7 +28,7 @@ const ItemList = styled.section`
   justify-content: flex-start;
   margin-left: ${(props) => props.theme.resume.section.marginLeft};
   margin-top: ${(props) => props.theme.resume.section.marginTop};
-  margin-right: 15rem;
+  margin-right: 0;
 
   @media only screen and (max-width: 1450px) {
     margin-right: 5rem;
