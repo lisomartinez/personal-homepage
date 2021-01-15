@@ -176,7 +176,7 @@ projects:
     description: aplicación de refactorings
     link: https://github.com/lisomartinez/gilded-rose-kata-java
   - title: pagina web personal (js/react/next)
-    description: aplicacion JAMStack para la generación de mi web personal https://lisandro.martinezaledda.com Integración con Sendgrid y Telegram Bot.
+    description: aplicacion JAMStack para la generación de mi web personal https://lisandro.martinezaledda.com. Integración con Sendgrid y Telegram Bot.
     link: https://github.com/lisomartinez/personal-homepage
   - title: show tracker (java/spring/webflux)
     description: API rest con programación funcional asíncrona para el seguimiento de series de television [en progreso].
