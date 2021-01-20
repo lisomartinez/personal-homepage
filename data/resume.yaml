@@ -158,7 +158,7 @@ interests: [ ]
 references: [ ]
 projects:
   - title: job seeker (java/spring)
-    description: API para el seguimiento de las búsquedas a las que me postulado
+    description: API para el seguimiento de las búsquedas a las que me he postulado
     link: https://github.com/lisomartinez/jobseeker-java
   - title: token-auth (java/spring/security)
     description: Proof of Concept de generacion de codigo para autentication multi-factor

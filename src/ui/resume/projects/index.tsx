@@ -9,14 +9,14 @@ import styled from 'styled-components';
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 3rem;
+  margin-top: 3rem;
 
   @media only screen and (max-width: 440px) {
     margin: 3rem 0 0 0;
   }
 
   @media only print {
-    margin: 5rem 0 0 0;
+    margin: 10rem 0 0 0;
   }
 `;
 
@@ -54,7 +54,7 @@ const ProjectList: React.FC<Props> = ({ projects, language }) => {
       <Accordion openByDefault={true} header={makeHeader(expanded, title)}>
         <List>
           {projects.map((project) => (
-            <Project key={project.link} project={project} />
+            <Project key={project.link} project={project} language={language} />
           ))}
         </List>
       </Accordion>

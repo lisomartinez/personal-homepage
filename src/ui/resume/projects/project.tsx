@@ -18,20 +18,21 @@ export const Container = styled.article`
   }
 `;
 
-type Props = {
-  project: ProjectType;
-};
-
 function makeHeader(project: ProjectType) {
   return <ProjectHeader title={project.title} />;
 }
 
-const Project: React.FC<Props> = ({ project }) => {
+type Props = {
+  project: ProjectType;
+  language: string;
+};
+
+const Project: React.FC<Props> = ({ project, language }) => {
   return (
     <Container>
       <Accordion header={makeHeader(project)} openByDefault={true}>
         <ProjectDescription description={project.description} />
-        <ProjectLink link={project.link} />
+        <ProjectLink language={language} link={project.link} />
       </Accordion>
     </Container>
   );

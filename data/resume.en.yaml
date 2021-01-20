@@ -88,49 +88,62 @@ education:
 awards: [ ]
 publications: [ ]
 skills:
-  - name: Frontend Development
+  - name: Java
+    level: Intermediate
+    keywords:
+      - Maven
+      - Gradle
+  - name: Spring
+    level: Intermediate
+    keywords:
+      - Spring
+      - JPA / Hibernate
+      - MVC
+      - Webflux
+      - REST
+  - name: Testing
+    level: Intermediate
+    keywords:
+      - Unitarios
+      - Integración
+      - JUnit
+      - Mockito
+      - Jest
+  - name: TDD
+    level: Beginner
+    keywords:
+      - Inside-out
+  - name: Contenedores
+    level: Beginner
+    keywords:
+      - Docker
+      - Docker Compose
+  - name: Desarrollo Frontend
     level: Beginner
     keywords:
       - HTML
       - CSS
       - Javascript
       - Typescript
-      - React
-      - Vue
-  - name: Version Control
+      - React / Next
+      - Vue / Nuxt
+  - name: Control de Versiones
     level: Intermediate
     keywords:
       - Git
-      - GitFlow
+      - Git flow
       - GitHub
   - name: SQL
     level: Intermediate
     keywords:
       - Sql Server
-  - name: Java
-    level: Intermediate
-    keywords:
-      - Spring
-      - Maven
-      - Gradle
-      - Hibernate
-  - name: Testing
-    level: Intermediate
-    keywords:
-      - JUnit
-      - Mockito
-      - Jest
-  - name: TDD
-    level: Beginner
-    keywords: [ ]
-  - name: Containers
-    level: Beginner
-    keywords:
-      - Docker
-      - Docker Compose
   - name: Linux
-    level: Advance
+    level: Intermediate
     keywords: [ ]
+  - name: Node
+    level: Beginner
+    keywords:
+      - serverless
 languages:
   - language: English
     fluency: Upper-intermediate
@@ -138,7 +151,46 @@ languages:
     fluency: Beginner
 interests: [ ]
 references: [ ]
-projects: [ ]
+projects:
+  - title: job seeker (java/spring)
+    description: API for tracking the job I have applied for
+    link: https://github.com/lisomartinez/jobseeker-java
+  - title: token-auth (java/spring/security)
+    description: Proof of Concept of multi-factor authentication with code generation
+    link: https://github.com/lisomartinez/token-auth
+  - title: spring MVC security (java)
+    description: Proof of Concept thick-client using basic auth
+    link: https://github.com/lisomartinez/spring-mvc-security
+  - title: kacman (kotlin)
+    description: Archlinux CLI package manager
+    link: https://github.com/lisomartinez/spring-mvc-security
+  - title: temporary rentals (js/vue/nuxt)
+    description: application of usability patterns. Developed for a software engineering specialization course
+    link: https://github.com/lisomartinez/alquileres-uai-usabilidad
+  - title: gilded rose kata (java/kata/refactoring)
+    description: refactoring
+    link: https://github.com/lisomartinez/gilded-rose-kata-java
+  - title: personal homepage (js/react/next)
+    description: development of my personal webpage using JAMStack application.
+    link: https://github.com/lisomartinez/personal-homepage
+  - title: show tracker (java/spring/webflux)
+    description: Rest API rest with reactive asynchronous functional programming for tracking television series [in progress].
+    link: https://github.com/lisomartinez/show-tracker
+  - title: healthy diet (java/tdd)
+    description: domain model for the dietary management.
+    link: https://github.com/lisomartinez/healthy-diet
+  - title: jyts (java/spring/CLI)
+    description: CLI application to consult the YTS catalog [download movies by torrent]
+    link: https://github.com/lisomartinez/jyts
+  - title: liflix (java/spring)
+    description: Rest API for torrent search
+    link: https://github.com/lisomartinez/liflix
+  - title: json-to-db-jdbc (java/jdbc)
+    description: Json file parsing and database persistence
+    link: https://github.com/lisomartinez/json-to-db-jdbc
+  - title: jmonitor (java)
+    description: Filesystem watcher
+    link: https://github.com/lisomartinez/jMonitor/tree/develop/src/main
 meta:
   canonical: https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json
   version: v1.0.0

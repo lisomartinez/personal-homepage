@@ -39,7 +39,7 @@ const ProjectTitle: React.FC<Props> = ({ title }) => {
     <Title>
       {extractTitle} <Separator>|</Separator>
       {tags.map((tag) => {
-        return <Tag>{tag}</Tag>;
+        return <Tag key={tag}>{tag}</Tag>;
       })}
     </Title>
   );

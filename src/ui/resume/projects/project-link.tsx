@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
-type Props = {
-  link: string;
-};
+import { Languages } from '../../../utils/language';
 
 const Link = styled.a`
   font-family: 'JetBrains Mono', monospace;
@@ -17,6 +14,7 @@ const Tag = styled.div`
   margin-right: 0.3rem;
   font-size: 1rem;
 `;
+
 const Container = styled.div`
   margin: 1rem;
   display: flex;
@@ -24,10 +22,16 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const ProjectLink: React.FC<Props> = ({ link }) => {
+type Props = {
+  link: string;
+  language: string;
+};
+
+const ProjectLink: React.FC<Props> = ({ link, language }) => {
+  const repository = language === Languages.EN ? 'REPOSITORY' : 'REPOSITORIO';
   return (
     <Container>
-      <Tag>REPOSITORIO:</Tag>
+      <Tag>{repository}</Tag>
       <Link href={link}>{link}</Link>
     </Container>
   );

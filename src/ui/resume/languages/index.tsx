@@ -3,9 +3,23 @@ import { Language } from '../../../domain/models/resume';
 import TitleComponent from '../shared/title';
 import LanguageComponent from './language';
 import Accordion from '../../accordion/accordion';
-import { MainContainer } from '../shared/resume.styles';
 import { List } from './index.styles';
 import { Languages } from '../../../utils/language';
+import styled from 'styled-components';
+
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+
+  @media only screen and (max-width: 440px) {
+    margin: 3rem 0 0 0;
+  }
+
+  @media only print {
+    margin: 10px 0 0 0;
+  }
+`;
 
 type Props = {
   languages: Language[];
